@@ -42,6 +42,9 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        JSONUtils jsonUtils = new JSONUtils();
+        jsonUtils.writeList("lista.json", studentList);
+        jsonUtils.readlist("lista.json");
     }
 }
 
