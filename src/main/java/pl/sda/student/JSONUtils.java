@@ -24,11 +24,10 @@ public class JSONUtils {
             try {
                 Student[] students = objectMapper.readValue(new File(filename), Student[].class);
                 for (Student stu : students) {
-                    System.out.println(stu.getName());
+                    System.out.println(stu.getName() + " " + stu.getLastname());
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-

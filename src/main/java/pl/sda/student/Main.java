@@ -47,4 +47,3 @@ public class Main {
         jsonUtils.readlist("lista.json");
     }
 }
-
